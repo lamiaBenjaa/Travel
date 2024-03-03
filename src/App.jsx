@@ -1,7 +1,19 @@
-
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import Ticket from "./pages/Ticket"
+import Explore from "./pages/Explore"
+import Activity from "./pages/Activity"
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )}
+    <div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Ticket" element={<Ticket/>}/>
+        <Route path="/Explore" element={<Explore/>}/>
+        <Route path="/Activity" element={<Activity/>}/>
+      </Routes>
+    
+    </div>
+    
+  )
+}
