@@ -9,11 +9,7 @@ const Header = () => {
   return (
     <>
     <header>
-<<<<<<< HEAD
-        <div className=' container   flex justify-between items-center py-7 px-24   w-full'>
-=======
-        <div className='  container  flex justify-between items-center py-8 px-24   w-full'>
->>>>>>> cf70c3de21142e7dd5368a9c5faf2578fcc256dd
+        <div className=' container  flex justify-between items-center py-8 px-24   w-full'>
           <div className=' w-2/12  text-2xl font-bold  text-cyan-500  '>TRAVEL</div>
           <div className='w-5/12 flex items-center justify-center  space-x-20 font-semibold  text-slate-300 '>
             <Link to='/' className={`${location.pathname == '/' ? 'text-gray-900' :'hover:text-gray-400 focus:text-gray-900'}`}>Home</Link>
