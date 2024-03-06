@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import logo from './logo.jpg'
-import { useEffect } from 'react'
+
 
 const Header = () => {
 
