@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import vid from '../assets/hero.mp4';
 import { Link } from 'react-router-dom';
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { MdCalendarMonth } from "react-icons/md";
+import { IoPerson } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 const Hero = () => {
   const [navActive, setNavActive] = useState('Hostelty');
@@ -38,18 +42,167 @@ const Hero = () => {
             </div>
           </div>
           <hr />
-          <div className={`${navActive === 'Hostelty' ? 'flex items-center' : 'hidden'}`}>
-            Hostly Content
+          <div className={`${navActive === 'Hostelty' ? 'flex items-center px-8 py-14' : 'hidden'}`}>
+            <div className='flex justify-around space-x-6 '>  
+                 <div className="">
+                   <HiOutlineLocationMarker/>
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Destination</h4>
+                    <input type="text " placeholder="Your destination ..."/>
+                  </div>
+                      
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-in</h4>
+                    <input type='date' />
+                  </div>
+           
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-out</h4>
+                    <input type='date'/>
+                  </div>
+           
+                  <div>
+                  <IoPerson />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Room & guest</h4>
+                    <input type='text' placeholder="Room & guest ..."/>
+                  </div>
+
+            </div>
+            <button className="flex justify-start items-center bg-cyan-500 text-white w-36 h-10 font-semibold rounded-lg">
+              <IoSearchOutline className="m-2"/>
+              Search
+            </button>
           </div>
-          <div className={`${navActive === 'Flights' ? 'flex items-center' : 'hidden'}`}>
-            Flights Content
+          <div className={`${navActive === 'Flights' ? 'flex items-center px-8 py-14' : 'hidden'}`}>
+          <div className='flex justify-around space-x-6 '>  
+                 <div className="">
+                   <HiOutlineLocationMarker className=""/>
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Destination</h4>
+                    <input type="text " placeholder="Your destination ..."/>
+                  </div>
+                      
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-in</h4>
+                    <input type='date' />
+                  </div>
+           
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-out</h4>
+                    <input type='date'/>
+                  </div>
+           
+                  <div>
+                  <IoPerson />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Room & guest</h4>
+                    <input type='text' placeholder="Room & guest ..."/>
+                  </div>
+
+            </div>
+            <button className="flex justify-start items-center bg-cyan-500 text-white w-36 h-10 font-semibold rounded-lg">
+              <IoSearchOutline className="m-2"/>
+              Search
+            </button>
           </div>
-          <div className={`${navActive === 'Bus' ? 'flex items-center' : 'hidden'}`}>
-            Bus Content
+          <div className={`${navActive === 'Bus' ? 'flex items-center px-8 py-14' : 'hidden'}`}>
+          <div className='flex justify-around space-x-6 '>  
+                 <div className="">
+                   <HiOutlineLocationMarker className=""/>
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Destination</h4>
+                    <input type="text " placeholder="Your destination ..."/>
+                  </div>
+                      
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-in</h4>
+                    <input type='date' />
+                  </div>
+           
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-out</h4>
+                    <input type='date'/>
+                  </div>
+           
+                  <div>
+                  <IoPerson />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Room & guest</h4>
+                    <input type='text' placeholder="Room & guest ..."/>
+                  </div>
+
+            </div>
+            <button className="flex justify-start items-center bg-cyan-500 text-white w-36 h-10 font-semibold rounded-lg">
+              <IoSearchOutline className="m-2"/>
+              Search
+            </button>
           </div>
-          <div className={`${navActive === 'Cars' ? 'flex items-center' : 'hidden'}`}>
-            Cars Content
+          <div className={`${navActive === 'Cars' ? 'flex items-center px-8 py-14' : 'hidden'}`}>
+          <div className='flex justify-around space-x-6 '>  
+                 <div className="">
+                   <HiOutlineLocationMarker className=""/>
+                  </div>
+                  <div className="px-2  ">
+                    <h4>Destination</h4>
+                    <input type="text " placeholder="Your destination ..."/>
+                  </div>
+                      
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-in</h4>
+                    <input type='date' />
+                  </div>
+           
+                  <div>
+                  <MdCalendarMonth />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Check-out</h4>
+                    <input type='date'/>
+                  </div>
+           
+                  <div>
+                  <IoPerson />
+                  </div>
+                  <div className="px-2 ">
+                    <h4>Room & guest</h4>
+                    <input type='text' placeholder="Room & guest ..."/>
+                  </div>
+
+            </div>
+            <button className="flex justify-start items-center bg-cyan-500 text-white w-36 h-10 font-semibold rounded-lg">
+              <IoSearchOutline className="m-2"/>
+              Search
+            </button>
           </div>
+          
         </div>
       </main>
     </section>
