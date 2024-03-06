@@ -7,3 +7,11 @@
 body{
     @apply font-Rubik
 }
+
+
+.dark_mode{
+    @apply bg-gray-900 text-white
+}
+.light_mode{
+    @apply bg-white text-black
+}
