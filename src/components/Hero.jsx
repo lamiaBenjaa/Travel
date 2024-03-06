@@ -102,6 +102,8 @@ const Hero = () => {
 
     //       </main>
     //     </section>
+    <>
+    
     <section className="min-h-screen">
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20  relative">
         <video
@@ -127,6 +129,62 @@ const Hero = () => {
        
       </div>
     </section>
+    <section>
+      <div className="flex items-center justify-between px-20 pb-10">
+        <div className="w-6/12 ">
+          <h1 className="text-6xl font-bold mb-4">Popular Place</h1>
+          <p className="text-lg">Let's enjoy this heaven on earth</p>
+        </div>
+        <div className="w-6/12">
+          <p className="text-lg ">
+            Many places are very famous, beautiful,clean ,and will give a very deep imporession to visitores and will make them come back
+          </p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 items-center gap-5 justify-between px-20  ">
+        <div className="p-3">
+          <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+          <div className="py-1 px-1">
+            <h1 className="py-1 font-semibold">SC.Mindanou</h1>
+            <h1 className="flex items-center gap-1">
+              <FaMapMarkerAlt className=" text-cyan-600" />
+              Mindanou,Philippines
+            </h1>
+          </div>
+        </div>
+        <div className="p-3">
+          <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+          <div className="py-1 px-1">
+            <h1 className="py-1 font-semibold">Disneyland Tokyo</h1>
+            <h1 className="flex items-center gap-1">
+              <FaMapMarkerAlt className=" text-cyan-600" />
+              Tokyo,Jaban
+            </h1>
+          </div>
+        </div>
+        <div className="p-3">
+          <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2162891/pexels-photo-2162891.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+          <div className="py-1 px-1">
+            <h1 className="py-1 font-semibold">Tousand Island</h1>
+            <h1 className="flex items-center gap-1">
+              <FaMapMarkerAlt className=" text-cyan-600" />
+              Java,Indonesia
+            </h1>
+          </div>
+        </div>
+        <div className="p-3">
+          <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+          <div className="py-1 px-1">
+            <h1 className="py-1 font-semibold">Basililka Santo</h1>
+            <h1 className="flex items-center gap-1">
+              <FaMapMarkerAlt className=" text-cyan-600" />
+              Venice,Italy
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+   </>
   );
 };
 
