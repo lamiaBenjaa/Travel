@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full z-[999999999]">
-        <div className="   flex justify-between items-center py-8 px-10 lg:px-24   ">
+        <div className="   flex justify-between items-center py-3 lg:py-5 px-10 lg:px-24   ">
           <div className="  w-2/12  text-2xl font-bold  text-cyan-500  ">
             TRAVEL
           </div>
