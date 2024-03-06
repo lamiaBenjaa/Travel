@@ -10,5 +10,5 @@ export default {
       'Rubik':'"Rubik", sans-serif'
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
