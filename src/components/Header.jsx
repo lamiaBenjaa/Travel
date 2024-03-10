@@ -123,7 +123,7 @@ const Header = () => {
                 >
                   Home
                 </Link>
-                <Link
+                <Link 
                   to="/Ticket"
                   className={`flex items-center justify-center py-3 rounded-md  ${
                     location.pathname == "/Ticket"

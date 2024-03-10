@@ -121,9 +121,6 @@ const Hero = () => {
           <p className="text-white font-semibold">
             Find and write about your experience around the world
           </p>
-
-          
-
         </div>
 
        
@@ -184,6 +181,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    
    </>
   );
 };
