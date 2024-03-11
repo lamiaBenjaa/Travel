@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaList, FaRegMinusSquare } from "react-icons/fa";
+import { FaList } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {

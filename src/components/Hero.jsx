@@ -113,7 +113,7 @@ const Hero = () => {
           loop
           autoPlay
         ></video>
-
+   
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold mb-4">
             Explore the whole world and enjoy its beauty
