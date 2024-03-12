@@ -18,7 +18,7 @@ import man from '../components/surfing/man.jpg'
 export default function Places() {
   const [explore,setExplore]= useState('destination')
   return (
-    <div className='w-full '>
+    <div className='w-full py-8 '>
       <div className='grid grid-cols-2  pt-12 px-20'>
            <div className='space-y-2'>
               <h1 className='text-5xl font-semibold '>Explore more</h1>
@@ -41,7 +41,7 @@ export default function Places() {
               <button className='flex space-x-2 font-semibold bg-slate-200 px-3 py-1 rounded-lg border-4 border-neutral-300 hover:ring-4 hover:ring-offset-blue-300 hover:bg-blue-200 ' ><p>Filters</p><FaFilter className=''/></button>
            </div>
       </div>
-      <div className={`${explore == 'destination' ? 'py-10 px-10 bg-gradient-to-t from-white via-blue-50 to-white' : 'hidden'}`}>
+      <div className={`${explore == 'destination' ? 'py-10 px-10' : 'hidden'}`}>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 lg:gap-10 px-5 lg:px-8 xl:px-20  '>
              <div className='space-y-6 relative'>
                  <img src={amalfi} alt='amalfi' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80 rounded-badge ' />
@@ -129,7 +129,7 @@ export default function Places() {
              </div>
         </div>
       </div>
-      <div className={`${explore == 'islands' ? 'w-full  py-16 bg-gradient-to-t from-white via-blue-50 to-white' : 'hidden'}`} >
+      <div className={`${explore == 'islands' ? 'w-full m-auto py-10 lg:mb-36  xl:mb-16' : 'hidden'}`} >
           <div className='grid lg:grid-cols-3 gap-6 w-[90%] m-auto space-y-36 md:space-y-32 lg:space-y-0'>
              <div className='relative ' >
                   <img src={fiji} className='w-80 h-[500px] m-auto rounded-full drop-shadow-2xl '/>

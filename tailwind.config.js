@@ -6,15 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        A:['Pacifico','cursive'],
-        B:['Nunito','sans-serif'],
-        C:['Dancing Script'],
-        D:['Varela Round']
-      },
     },
     fontFamily:{
-      'Rubik':[ 'sans-serif']
+      'Rubik':'sans-serif'
     }
   },
   plugins: [require("daisyui")],

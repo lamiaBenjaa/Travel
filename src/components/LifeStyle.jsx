@@ -46,7 +46,7 @@ const LifeStyle = () => {
                       <p className='flex space-x-2'><FaStar className='text-yellow-500 text-lg inline '/><p className='font-D'>3.5</p></p>
                     </div>
             </div>
-            <div className='flex justify-between items-center space-x-3 p-3 w-fit h-14 bg-cyan-50 rounded-xl absolute top-[350px] md:top-[280px] xl:top-[350px] right-10 md:hidden xl:flex right-44 shadow-lg'>
+            <div className='flex justify-between items-center space-x-3 p-3 w-fit h-14 bg-cyan-50 rounded-xl absolute top-[350px] md:top-[280px] xl:top-[350px] right-10 md:hidden xl:flex  shadow-lg'>
                     <img src={i3} alt='avatar girl' className='w-9 rounded-full'/>
                     <div>
                       <h1>Joana Zofrana</h1>
