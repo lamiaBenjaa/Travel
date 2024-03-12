@@ -14,7 +14,7 @@ export default {
       },
     },
     fontFamily:{
-      'Rubik':'"Rubik", sans-serif'
+      'Rubik':[ 'sans-serif']
     }
   },
   plugins: [require("daisyui")],
