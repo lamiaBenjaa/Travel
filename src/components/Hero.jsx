@@ -77,13 +77,23 @@ const Hero = () => {
            className="text-lg">Let's enjoy this heaven on earth</motion.p>
         </div>
         <div className="w-6/12">
-          <p className="text-lg ">
+          <motion.p
+          variants={{
+            hidden: { opacity: 0, x:-200 },
+            visible: { opacity: 1, x: 0 ,transition:{ duration:1, delay: 1 }},
+          }}
+          initial="hidden"
+          whileInView="visible"
+          className="text-lg ">
             Many places are very famous, beautiful,clean ,and will give a very deep imporession to visitores and will make them come back
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 items-center gap-5 justify-between px-20  ">
-        <div className="p-3">
+        <motion.div 
+        whileHover={{scale:1.1}}
+        transition={{duration:0.5}}
+        className="p-3">
           <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
           <div className="py-1 px-1">
             <h1 className="py-1 font-semibold">SC.Mindanou</h1>
@@ -92,8 +102,11 @@ const Hero = () => {
               Mindanou,Philippines
             </h1>
           </div>
-        </div>
-        <div className="p-3">
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.1}}
+        transition={{duration:0.5}}
+         className="p-3">
           <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
           <div className="py-1 px-1">
             <h1 className="py-1 font-semibold">Disneyland Tokyo</h1>
@@ -102,8 +115,11 @@ const Hero = () => {
               Tokyo,Jaban
             </h1>
           </div>
-        </div>
-        <div className="p-3">
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.1}}
+        transition={{duration:0.5}}
+         className="p-3">
           <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/2162891/pexels-photo-2162891.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
           <div className="py-1 px-1">
             <h1 className="py-1 font-semibold">Tousand Island</h1>
@@ -112,8 +128,11 @@ const Hero = () => {
               Java,Indonesia
             </h1>
           </div>
-        </div>
-        <div className="p-3">
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.1}}
+        transition={{duration:0.5}}  
+        className="p-3">
           <img className="h-[400px] w-[340px] rounded-xl" src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
           <div className="py-1 px-1">
             <h1 className="py-1 font-semibold">Basililka Santo</h1>
@@ -122,7 +141,7 @@ const Hero = () => {
               Venice,Italy
             </h1>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
     

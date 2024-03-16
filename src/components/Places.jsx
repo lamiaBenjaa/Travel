@@ -14,6 +14,8 @@ import santorini from '../components/islands/santorini.jpg'
 import surf from '../components/surfing/menSun.jpg'
 import women from '../components/surfing/women.jpg'
 import man from '../components/surfing/man.jpg'
+import {motion} from 'framer-motion'
+
 
 export default function Places() {
   const [explore,setExplore]= useState('destination')
@@ -21,14 +23,38 @@ export default function Places() {
     <div className='w-full py-8 '>
       <div className='grid grid-cols-2  pt-12 px-20'>
            <div className='space-y-2'>
-              <h1 className='text-5xl font-semibold '>Explore more</h1>
-              <p className='text-lg'>Let's go on adventure</p>
+              <motion.h1
+               variants={{
+                  hidden:{opacity:0 ,x:-60},
+                  visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.2}},
+               }}
+               initial='hidden'
+               whileInView='visible'
+               className='text-5xl font-semibold '>Explore more</motion.h1>
+              <motion.p 
+               variants={{
+                  hidden:{opacity:0 ,x:-60},
+                  visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.5}},
+               }}
+               initial='hidden'
+               whileInView='visible'
+              className='text-lg'>Let's go on adventure</motion.p>
            </div>
            <div>
-              <p>All-inclisive vacations and flights Caribbean , Indonesian , and more than 1,300 destinations worldwide. Let's explore now . </p>
+              <motion.p
+               variants={{
+                  hidden:{opacity:0 ,x:60},
+                  visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.8}},
+               }}
+               initial='hidden'
+               whileInView='visible'
+              >All-inclisive vacations and flights Caribbean , Indonesian , and more than 1,300 destinations worldwide. Let's explore now . </motion.p>
            </div>
       </div>
-      <div className='flex justify-between items-center space-x-10 px-5 lg:px-8 xl:px-20'>
+      <motion.div
+      initial={{scale:0.5}}
+      whileInView={{scale:1,transition:{duration:2}}}
+       className='flex justify-between items-center space-x-10 px-5 lg:px-8 xl:px-20'>
            <div className='space-x-4 space-y-4 lg:space-y-0  '>
               <button onClick={()=>setExplore('destination')} className={` rounded-lg px-4 py-1 font-semibold ${explore == 'destination' ? 'bg-gray-900 text-slate-200' : 'bg-slate-200 hover:ring-4 hover:ring-offset-blue-300 hover:bg-blue-200 '}`}>Popular </button>
               <button onClick={()=>setExplore('islands')} className={` rounded-lg px-4 py-1 font-semibold ${explore == 'islands' ? 'bg-gray-900 text-slate-200' : 'bg-slate-200 hover:ring-4 hover:ring-offset-blue-300 hover:bg-blue-200 '}`}>Islands</button>
@@ -40,10 +66,19 @@ export default function Places() {
            <div className='py-6'>
               <button className='flex space-x-2 font-semibold bg-slate-200 px-3 py-1 rounded-lg border-4 border-neutral-300 hover:ring-4 hover:ring-offset-blue-300 hover:bg-blue-200 ' ><p>Filters</p><FaFilter className=''/></button>
            </div>
-      </div>
-      <div className={`${explore == 'destination' ? 'py-10 px-10' : 'hidden'}`}>
+      </motion.div>
+      <motion.div
+      variants={{
+         hidden:{opacity:0 , y:200},
+         visible:{opacity:1 , y:0 , transition:{duration:1 , delay:0.5}}
+      }}
+      initial='hidden'
+      whileInView='visible'
+       className={`${explore == 'destination' ? 'py-10 px-10' : 'hidden'}`}>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 lg:gap-10 px-5 lg:px-8 xl:px-20  '>
-             <div className='space-y-6 relative'>
+             <motion.div 
+             whileHover={{scale:1.1 , transition:{duration:0.5}}}
+              className='space-y-6 relative'>
                  <img src={amalfi} alt='amalfi' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80 rounded-badge ' />
                  <div className='flex justify-between items-center px-6'>
                   <div>
@@ -56,8 +91,10 @@ export default function Places() {
                   </div>
                  </div>
                  <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-              </div>
-             <div className='space-y-8 relative'>
+              </motion.div>
+             <motion.div 
+             whileHover={{scale:1.1 , transition:{duration:0.5}}}
+              className='space-y-8 relative'>
                  <img src={taj} alt='taj' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80- rounded-badge' />
                  <div className='flex justify-between items-center px-6'>
                   <div>
@@ -70,8 +107,10 @@ export default function Places() {
                   </div>
                  </div>
                  <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-                </div>
-             <div className='space-y-6 relative'>
+                </motion.div>
+             <motion.div
+              whileHover={{scale:1.1 , transition:{duration:0.5}}}
+              className='space-y-6 relative'>
                  <img src={indonesia} alt='indonesia' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80 rounded-badge' /> 
                  <div className='flex justify-between items-center px-6'>
                   <div>
@@ -84,8 +123,10 @@ export default function Places() {
                   </div>
                  </div>
                  <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-             </div>
-             <div className='space-y-6 relative'>
+             </motion.div>
+             <motion.div
+             whileHover={{scale:1.1 , transition:{duration:0.5}}}
+              className='space-y-6 relative'>
                  <img src={osaka} alt='osaka' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80 rounded-badge relative' />
                  <div className='flex justify-between items-center px-6'>
                   <div>
@@ -98,8 +139,10 @@ export default function Places() {
                   </div>
                  </div>
                  <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-             </div>
-             <div className='space-y-6 relative'>
+             </motion.div>
+             <motion.div 
+             whileHover={{scale:1.1 , transition:{duration:0.5}}}
+             className='space-y-6 relative'>
                  <img src={reinga} alt='reinga' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80 rounded-badge' />
                  <div className='flex justify-between items-center px-6'>
                   <div>
@@ -112,8 +155,10 @@ export default function Places() {
                   </div>
                  </div>
                  <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-             </div>
-             <div className='space-y-6 relative'>
+             </motion.div>
+             <motion.div 
+             whileHover={{scale:1.1 , transition:{duration:0.5}}}
+             className='space-y-6 relative'>
                 <img src={italy} alt='italy' className='w-full h-[400px] md:h-60 xl:h-[270px] max-h-80  rounded-badge' />
                 <div className='flex justify-between items-center px-6'>
                   <div>
@@ -126,9 +171,9 @@ export default function Places() {
                   </div>
                 </div>
                 <div className='flex bg-gray-200 absolute top-1 right-5 text-sm space-x-1 rounded-lg p-1 drop-shadow-2xl'><FaStar className='text-yellow-500' /><p className='font-B'>4.9</p></div>
-             </div>
+             </motion.div>
         </div>
-      </div>
+      </motion.div>
       <div className={`${explore == 'islands' ? 'w-full m-auto py-10 lg:mb-36  xl:mb-16' : 'hidden'}`} >
           <div className='grid lg:grid-cols-3 gap-6 w-[90%] m-auto space-y-36 md:space-y-32 lg:space-y-0'>
              <div className='relative ' >
