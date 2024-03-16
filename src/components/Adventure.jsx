@@ -14,7 +14,7 @@ export default function Adventure() {
           <div className='text-center space-y-2 py-8'>
               <motion.h1
               variants={{
-                hidden:{opacity:0 , x:-60},
+                hidden:{opacity:0 , x:-50},
                 visible:{opacity:1 , x:0 , transition:{duration:1 , delay:0.25}},
               }} 
               initial='hidden'
@@ -22,7 +22,7 @@ export default function Adventure() {
                className='text-5xl font-bold'>Let's go on an adventure</motion.h1>
               <motion.p
               variants={{
-                hidden:{opacity:0 , x:60},
+                hidden:{opacity:0 , x:50},
                 visible:{opacity:1 , x:0 , transition:{duration:1 , delay:0.25}},
               }} 
               initial='hidden'
@@ -63,7 +63,7 @@ export default function Adventure() {
         <div className='flex justify-between w-[80%] m-auto'>
             <motion.h1
              variants={{
-               hidden:{opacity:0 , x:-60},
+               hidden:{opacity:0 , x:-40},
                visible:{opacity:1 , x:0 , transition:{duration:1 , delay:0.25}},
              }} 
              initial='hidden'
@@ -71,7 +71,7 @@ export default function Adventure() {
              className='text-4xl font-bold'>Book tickets and go now!</motion.h1>
             <motion.button
              variants={{
-               hidden:{opacity:0 , x:60},
+               hidden:{opacity:0 , x:40},
                visible:{opacity:1 , x:0 , transition:{duration:1 , delay:0.25}},
              }} 
              initial='hidden'
@@ -79,7 +79,7 @@ export default function Adventure() {
              className=' bg-teal-500 text-gray-100 px-4 drop-shadow-lg py-1 font-bold rounded-lg'>Book now</motion.button>
         </div>
         <div className='w-[77%] m-auto drop-shadow-md '>
-           <video src={vedio} loop autoPlay controls muted className=' rounded-3xl w-full m-auto h-'>
+           <video src={vedio} loop autoPlay muted className=' rounded-3xl w-full m-auto h-'>
            </video>
            
         </div>

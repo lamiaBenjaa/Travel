@@ -19,7 +19,7 @@ const LifeStyle = () => {
            className='text-center  md:col-span-2 h-fit p-5'>
                <motion.h1
                variants={{
-                hidden:{opacity:0 , x:-60},
+                hidden:{opacity:0 , x:-50},
                 visible:{opacity:1 , x:0 ,transition:{delay:0.25 , duration:1}},
                }} 
                initial='hidden'
@@ -27,7 +27,7 @@ const LifeStyle = () => {
                 className='font-semibold text-4xl '>Travel to make sweet memories</motion.h1>
                <motion.p
                  variants={{
-                  hidden:{opacity:0 , x:-60},
+                  hidden:{opacity:0 , x:-50},
                   visible:{opacity:1 , x:0 ,transition:{delay:0.5 , duration:1}},
                  }} 
                  initial='hidden'
@@ -36,7 +36,7 @@ const LifeStyle = () => {
           </motion.div>
           <motion.div 
           variants={{
-            hidden:{opacity:0 , x:-60},
+            hidden:{opacity:0 , x:-50},
             visible:{opacity:1 , x:0 , transition:{duration:1,delay:0.75}}
           }}
           initial='hidden'

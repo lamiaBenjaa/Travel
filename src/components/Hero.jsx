@@ -33,7 +33,7 @@ const Hero = () => {
           }}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 1, delay: 0.25 }}
+          transition={{ duration: 1, delay: 0.75 }}
           
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold mb-4">
             Explore the whole world and enjoy its beauty
@@ -45,7 +45,7 @@ const Hero = () => {
           }}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 1, delay: 0.75 }}
+          transition={{ duration: 1, delay: 1 }}
            className="text-white font-semibold">
             Find and write about your experience around the world
           </motion.p>
@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="w-6/12">
           <motion.p
           variants={{
-            hidden: { opacity: 0, x:-200 },
+            hidden: { opacity: 0, x:50 },
             visible: { opacity: 1, x: 0 ,transition:{ duration:1, delay: 1 }},
           }}
           initial="hidden"

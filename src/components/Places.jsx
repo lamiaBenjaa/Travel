@@ -25,7 +25,7 @@ export default function Places() {
            <div className='space-y-2'>
               <motion.h1
                variants={{
-                  hidden:{opacity:0 ,x:-60},
+                  hidden:{opacity:0 ,x:-50},
                   visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.2}},
                }}
                initial='hidden'
@@ -33,7 +33,7 @@ export default function Places() {
                className='text-5xl font-semibold '>Explore more</motion.h1>
               <motion.p 
                variants={{
-                  hidden:{opacity:0 ,x:-60},
+                  hidden:{opacity:0 ,x:-50},
                   visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.5}},
                }}
                initial='hidden'
@@ -43,7 +43,7 @@ export default function Places() {
            <div>
               <motion.p
                variants={{
-                  hidden:{opacity:0 ,x:60},
+                  hidden:{opacity:0 ,x:50},
                   visible:{opacity:1 ,x:0 ,transition:{duration:1 ,delay:0.8}},
                }}
                initial='hidden'
