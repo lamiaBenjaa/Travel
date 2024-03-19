@@ -14,13 +14,13 @@ export default function Explore() {
       opacity:1
     }}
     transition={{
-      duration:0.7
+      duration:0.3
     }}
     exit={{
       y:'100vh',
     }}
      className='bg-orange-200 w-full h-screen'>
-      <Header/>
+     <Header/>
     </motion.div>
   )
 }

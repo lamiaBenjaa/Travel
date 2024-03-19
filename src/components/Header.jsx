@@ -51,14 +51,14 @@ const Header = () => {
               Explore
             </Link>
             <Link
-              to="/Activity"
+              to="/About"
               className={`${
-                location.pathname == "/Activity"
+                location.pathname == "/About"
                   ? "text-gray-900"
                   : "hover:text-gray-400 focus:text-gray-900"
               }`}
             >
-              Activity
+              About Us
             </Link>
           </div>
           <div className="w-3/12   font-semibold hidden lg:flex space-x-1 items-center justify-center gap-1 ">
@@ -144,14 +144,14 @@ const Header = () => {
                   Explore
                 </Link>
                 <Link
-                  to="/Activity"
+                  to="/About"
                   className={`flex items-center justify-center py-3 rounded-md  ${
-                    location.pathname == "/Activity"
+                    location.pathname == "/About"
                       ? "bg-gray-900 text-white w-full "
                       : "hover:text-gray-400 focus:text-gray-900"
                   }`}
                 >
-                  Activity
+                  About Us
                 </Link>
               </ul>
             </div>

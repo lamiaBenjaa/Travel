@@ -14,7 +14,7 @@ export default function Ticket() {
       opacity:1
     }}
     transition={{
-      duration:0.7
+      duration:0.3
     }}
     exit={{
       y:'100vh',

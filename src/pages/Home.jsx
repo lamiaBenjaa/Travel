@@ -20,18 +20,17 @@ const Home = () => {
       opacity:1
     }}
     transition={{
-      duration:0.7
+      duration:0.3
     }}
     exit={{
       y:'100vh',
     }}
      >
-       <Header />
+       <Header/>
        <Hero />
        <LifeStyle/>
        <Places/>
        <Adventure/>
-       <Footer/>
     </motion.div>
     
   )
