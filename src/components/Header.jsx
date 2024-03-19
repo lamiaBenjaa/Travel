@@ -31,6 +31,16 @@ const Header = () => {
               Home
             </Link>
             <Link
+              to="/About"
+              className={`${
+                location.pathname == "/About"
+                  ? "text-gray-900"
+                  : "hover:text-gray-400 focus:text-gray-900"
+              }`}
+            >
+              About Us
+            </Link>
+            <Link
               to="/Ticket"
               className={`${
                 location.pathname == "/Ticket"
@@ -38,7 +48,7 @@ const Header = () => {
                   : "hover:text-gray-400 focus:text-gray-900"
               }`}
             >
-              Ticket
+              Contact
             </Link>
             <Link
               to="/Explore"
@@ -50,16 +60,7 @@ const Header = () => {
             >
               Explore
             </Link>
-            <Link
-              to="/About"
-              className={`${
-                location.pathname == "/About"
-                  ? "text-gray-900"
-                  : "hover:text-gray-400 focus:text-gray-900"
-              }`}
-            >
-              About Us
-            </Link>
+            
           </div>
           <div className="w-3/12   font-semibold hidden lg:flex space-x-1 items-center justify-center gap-1 ">
             <label className="swap swap-rotate">

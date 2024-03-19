@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/Header'
 import {motion} from 'framer-motion'
 
@@ -19,8 +18,9 @@ export default function Explore() {
     exit={{
       y:'100vh',
     }}
-     className='bg-orange-200 w-full h-screen'>
+     className='bg-white w-full h-screen'>
      <Header/>
+
     </motion.div>
   )
 }
