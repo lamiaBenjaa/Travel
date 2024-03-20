@@ -6,10 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        mine:["Protest Revolution", "sans-serif"]
+      }
     },
     fontFamily:{
       'Rubik':'sans-serif'
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui") , require('tailwind-scrollbar-hide')],
 }
